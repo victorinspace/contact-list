@@ -1,19 +1,21 @@
 import React, { Component } from 'react'
 import './App.css'
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
 
-import contacts from './contacts.json'
+import List from './List'
+import Detail from './Detail'
 
 class App extends Component {
   render() {
     return (
-      <div className="container">
-        <h1>This is The Top Header</h1>
-        <ul>
-        	<li>This is a test {contacts}</li>
-        	<li>This is also a test</li>
-        	<li>Hey, look at that. Another test</li>
-        </ul>
-      </div>
+      <Router>
+				<div>
+      		<Switch>
+	      		<Route exact path="/" component={List} />
+	      		<Route path="/detail" component={Detail} />
+      		</Switch>
+				</div>
+      </Router>
     )
   }
 }
