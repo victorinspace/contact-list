@@ -1,9 +1,58 @@
 body {
 	margin: 0;
 	padding: 0;
+	background: rgb(217, 217, 217);
 	font-family: sans-serif;
 }
 
 ul {
 	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+h1 {
+	background: rgb(118, 179, 50);
+	padding: 20px;
+	color: white;
+	border-bottom: 3px solid rgb(95,151,26)
+}
+
+div {
+	margin: 20px auto;
+	background: white;
+	width: 500px;
+}
+
+.peeps {
+	display: flex;
+	flex-direction: column;
+}
+
+li {
+	border-bottom: 1px solid rgb(226, 226, 226);
+	line-height: 50px;
+
+}
+
+img {
+	border-radius: 100px;
+	padding: 10px 10px;
+}
+
+
+.detailImg {
+	background: rgb(118, 179, 50);
+	padding: 20px;
+	color: white;
+	border-bottom: 3px solid rgb(95,151,26)
+}
+
+.detailImg > img {
+	border-radius: 100px;
+	margin: auto;
+	padding: 20px;
 }

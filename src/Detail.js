@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
+import DetailContainer from './DetailContainer'
 
-class Detail extends Component {
-
+class Detail extends Component { 
 	render() {
 		return (
 			<div>
-				<h1>Detail</h1>
+				<DetailContainer />
 			</div>
 		)
 	}
