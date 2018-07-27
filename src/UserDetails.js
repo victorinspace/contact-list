@@ -13,7 +13,7 @@ const UserDetails = (props) => (
 	</div>
 )
 
-class Detail extends Component { 
+class UserDetailsContainer extends Component { 
 	state = {
 		img: '',
 		name: '',
@@ -22,7 +22,7 @@ class Detail extends Component {
 		location: ''
 	}
 
-	componentDidUpdate() {
+	componentDidMount() {
 		const user = getUser(this.props.match.params.id)
 
 		this.setState({

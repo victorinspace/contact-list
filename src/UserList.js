@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { getAllUsers } from './user'
+import { getAllUsers } from './userFunctions'
+import { Link } from 'react-router-dom'
 
 const UserList = (props) => (
 	<div>
@@ -7,7 +8,7 @@ const UserList = (props) => (
 		<ul>
 			{props.users.map(user => (
 				<li>
-					<Link to={`user ${user.id}`}>
+					<Link to={`/user/${user.id}`}>
 						<img src={user.picture.thumbnail} alt=""/>
 						{user.name.first} {user.name.last}
 					</Link>

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css'
 
 import UserList from './UserList'
-import UserDetail from './UserDetail'
+import UserDetails from './UserDetails'
 
 class App extends Component {
   render() {
