@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css'
 
-import List from './List'
-import DetailContainer from './DetailContainer'
+import UserList from './UserList'
+import UserDetail from './UserDetail'
 
 class App extends Component {
   render() {
@@ -11,8 +11,8 @@ class App extends Component {
       <Router>
 				<div>
       		<Switch>
-	      		<Route exact path="/" component={List} />
-	      		<Route path="/detail/:id" component={DetailContainer} />
+	      		<Route exact path="/" component={UserList} />
+	      		<Route path="/user/:id" component={UserDetails} />
       		</Switch>
 				</div>
       </Router>
